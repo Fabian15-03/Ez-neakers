@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/index.css">
+
+    <title>Ez-neakers</title>
+</head>
+
+<body>
+
+
+    <header class="header">
+        <!-- Barra de Navegacion -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+          
+          <a class="navbar-brand" href="/">
+            <img src="../img/logo.png" alt="logo de la empresa" class="logo">
+          </a>
+
+            <form class="d-flex">
+              <input class="form-control me-2" size="70" type="search" placeholder="Busca tus productos" aria-label="Search">
+              <button class="btn btn-danger my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+
+            <div>
+            <!-- Botones de la Barra de Navegacion -->
+                <div class="btn-group" role="group">
+                    <button id="grupoHeader" type="button" class="btn btn-danger dropdown-toggle ml-3 me-2" data-bs-toggle="dropdown" aria-expanded="false">
+                      Más
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="grupoHeader">
+                        <li><a class="dropdown-item" href="#">Nosotros</a></li>
+                        <li><a class="dropdown-item" href="#">Como Funciona</a></li>
+                        <li><a class="dropdown-item" href="#">Guias</a></li>
+                        <li><a class="dropdown-item" href="#">Preguntas y Respuestas</a></li>
+                        <li><a class="dropdown-item" href="#">Blog</a></li>
+                        <li><div class="dropdown-divider"></div></li>
+                        <a class="dropdown-item" href="#">Ayuda y Asistencia</a></li>
+                    </ul>
+                </div>
+            <a class="btn btn-danger ml-3 me-2" href="/sesion" >Iniciar Sesión</a>
+            <a href="" class="btn btn-danger ml-3 me-2 my-sm-0" data-bs-toggle="modal" data-bs-target="#registro1">Registrate</a>
+            </div>
+          </div>
+          
+        </nav> 
+    </header>
+
+    <div class="separator"></div>
+        <!-- Separador -->
+
+     <main class="main">
+        <!-- Carrousel -->
+        <div id="carouselMain" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img class="d-block w-80 " src="../img/slide1.jpeg" alt="First slide">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img class="d-block w-80" src="../img/slide2.jpeg" alt="Second slide">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img class="d-block w-80" src="../img/slide3.png" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselMain" type="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselMain" type="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+
+        
+        
+
+        <!-- Mayores Ventas -->
+        <div  class="row" style="justify-content: space-between" id="top_ventas">
+            <div style="justify-content: space-between; flex-direction: row;"><h4>Zapatillas Top de la Semana</h4></div>
+            <div style="justify-content: space-between; flex-direction: row;"><p>Ver más</p></div>
+        </div>
+        <div class="row" id="zapatillasTop">
+
+            <div class="card" id="card_zapatillasTop" >
+            <img class="card-img-top" src="../img/AirForceOne.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Nike Air Force 1 White</h5>
+              <p class="card-text" style="font-weight: bold; font-size:  24px;">$ 97</p>
+              <a href="#" class="btn btn-info">Comprar Ahora</a>
+            </div>
+          </div>
+          <div class="card" id="card_zapatillasTop" >
+            <img class="card-img-top" src="../img/OzweegoBlack.jpeg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Adidas Ozweego Triple Black</h5>
+              <p class="card-text" >$ 120</p>
+              <a href="#" class="btn btn-info">Comprar Ahora</a>
+            </div>
+          </div>
+          <div class="card" id="card_zapatillasTop">
+            <img class="card-img-top" src="../img/AirMax97SW.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Nike Air Max 97 Sean Wotherspoon</h5>
+              <p class="card-text" >$ 220</p>
+              <a href="#" class="btn btn-info">Comprar Ahora</a>
+            </div>
+          </div>
+          <div class="card" id="card_zapatillasTop">
+            <img class="card-img-top" src="../img/yeezy_slide.jpeg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Adidas Yeezy Slide Pure</h5>
+              <p class="card-text" >$ 129</p>
+              <a href="#" class="btn btn-info">Comprar Ahora</a>
+            </div>
+          </div>
+          <div class="card" id="card_zapatillasTop">
+            <img class="card-img-top" src="../img/NB565.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">New Balance 565 Brown</h5>
+              <p class="card-text" >$ 185</p>
+              <a href="#" class="btn btn-info">Comprar Ahora</a>
+            </div>
+          </div>
+          <div class="card" id="card_zapatillasTop">
+            <img class="card-img-top" src="../img/nitejoggersilver.jpeg" alt="Card image cap" >
+            <div class="card-body">
+              <h5 class="card-title">Adidas Nite Jogger Reflective</h5>
+              <p class="card-text" >$ 117</p>
+              <a href="#" class="btn btn-info">Comprar Ahora</a>
+            </div>
+          </div>
+          <div class="card" id="card_zapatillasTop">
+            <img class="card-img-top" src="../img/AJ1.jpeg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Jordan 1 Low Bred Toe</h5>
+              <p class="card-text" >$ 224</p>
+              <a href="#" class="btn btn-info">Comprar Ahora</a>
+            </div>
+          </div>
+          
+        </div>
+
+
+        <div id="marcas">
+            <h4>Marcas Principales</h4>
+        </div>
+        <div class="row" id="marcasPrincipales">
+            <div class="card" id="marcasPrincipales_card">
+            <a href="#">
+            <img class="card-img-top" src="../img/nike.jpeg"  alt="Card image cap"></a>
+            </div>
+          <div class="card" id="marcasPrincipales_card">
+            <a href="#">
+            <img class="card-img-top" src="../img/adidas.jpeg"  alt="Card image cap"></a>
+            </div>
+          <div class="card" id="marcasPrincipales_card">
+            <a href="#">
+            <img class="card-img-top" src="../img/yeezy.jpeg"  alt="Card image cap"></a>
+          </div>
+          <div class="card" id="marcasPrincipales_card">
+            <a href="#">
+            <img class="card-img-top" src="../img/Airjordan.png"  alt="Card image cap"></a>
+          </div>
+          <div class="card" id="marcasPrincipales_card">
+            <a href="#">
+            <img class="card-img-top" src="../img/NB.png" alt="Card image cap"></a>
+          </div> 
+        </div>
+          
+          
+        </div>
+    
+        <div class="jumbotron" style="margin-top: 60px;">
+            <h1 class="display-4">Bienvenidos a Ez-neakers</h1>
+            <p class="lead">Simple relleno hacia abajo para que las personas conozcan mas de la empresa</p>
+            <hr class="my-4">
+            <p>No se me ocurre nada ahora , lo hare mas tarde </p>
+            <p class="lead">
+              <a class="btn btn-info btn-lg" href="#" role="button">Dejarlo para despues :)</a>
+            </p>
+        </div>
+
+        
+
+        <!--Modal-->
+        <div class="modal fade " id="registro1" tabindex="-1" role="dialog" aria-labelledby="registros1"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered  modal-lg" role="document">
+            <div class="modal-content">
+              
+
+              <!--
+              <div class="progress" style="height: 20px; margin-left: 5%; margin-right: 5%; ">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%">25%</div>
+              </div>
+              -->
+
+              <div class="modal-body" style="border-color: black;">
+                <class class="card" style="border-color: transparent;">
+                  <div class="row">
+                    <div class="col-6">
+                      <img src="../img/register.jpeg" style="height: 100%; width: 80%;" class="img-fluid rounded-start" alt="register_image">
+                    </div>
+                    <div class="col-7" style=" margin-left:-100px;" >
+                      <div class="card-body">
+                        <div class="form_datosPersonales">
+                          <h4>Datos Personales</h4>
+                        </div>
+                          <form style="margin-top: 5%;">
+                              <!-- Nombre  Completo -->
+                                  <label for="full_name_id" class="form-label" id="datain">Nombre Completo</label>
+                                  <input type="text" class="form-control form-control-sm" id="full_name_id" name="full_name"  placeholder="Ingrese su nombre" style="width: 100%;">
+                                 
+                              <!-- Correo Electronico -->
+                                  <label for="exampleInputEmail1" class="form-label" id="datain">Correo Electronico </label>
+                                  <input type="email" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su e-mail" style="width: 100%;">
+
+                              <!-- Teléfono -->
+                                    <label for="inputPassword6" class="form-label" id="datain">Teléfono</label>
+                                  <div class="input-group input-group-sm">
+                                    <span class="input-group-text input-group-text-sm" id="basic-addon1">+51</span>
+                                    <input type="text" class="form-control form-control-sm" placeholder="Telefono" aria-label="Username" aria-describedby="basic-addon1">
+                                  </div>
+                          
+                               <!-- Contraseña -->
+                                    <label for="inputPassword6" class="form-label" id="datain">Contraseña</label>
+                                    <input type="password" id="inputPassword6" class="form-control form-control-sm" aria-describedby="passwordHelpInline" value="password" style="width: 100%;">
+
+                               <!-- Repetir Contraseña -->
+                                    <label for="inputPassword6" class="form-label" id="datain">Repetir Contraseña</label>
+                                    <input type="password" id="inputPassword6" class="form-control form-control-sm" aria-describedby="passwordHelpInline" value="password" style="width: 100%;">
+                                  
+                  
+                              <div class="mb-3 form-check" id="checks">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Acepto los <a href="">Terminos y Condiciones</a> </label>
+                              </div>
+                  
+                              <div class="mb-3 form-check" id="checks">
+                                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                  <label class="form-check-label" for="exampleCheck1">Acepto la <a href="">Politica de Privacidad</a> </label>
+                              </div>                         
+                          </form>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="modal-footer">
+                <div class="row" style="justify-content: flex-end; margin-right: 5%; margin-bottom: 20px;">
+                  <a class="btn btn-danger ml-3 my-sm-0"  data-bs-target="#registro2" data-bs-toggle="modal">Siguiente</a>
+                </div>
+              </div>
+
+              
+            </div>
+          </div>
+        </div>
+
+        
+
+
+
+
+
+     </main>
+
+
+     <footer class="footer">
+        <!-- Separador -->
+        <div class="separator"></div>
+        <!-- Social Footer -->
+        <div class="social">
+            <a href="index.html"><img src="../img/fb.png" alt="facebook"></a>
+               
+            <a href="index.html"><img src="../img/wtsp.png" alt="wtsp"></a>
+
+            <a href="index.html"><img src="../img/ig.png" alt="ig"></a>
+        </div>
+        
+        <div class="copy">&copy; Ez-neakers | Todos los Derechos Reservados</div>
+     </footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
